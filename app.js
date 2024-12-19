@@ -1,4 +1,13 @@
 // alert("test")
+import streamlit as st
+import streamlit.components.v1 as components
+
+# Load HTML content
+with open("index.html", "r") as file:
+    html_content = file.read()
+
+components.html(html_content, height=800, scrolling=True)
+
 const todoForm=document.querySelector('form');
 const todoInput=document.getElementById("todo-input");
 const todoListUL=document.getElementById("todo-list");
