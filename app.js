@@ -64,7 +64,9 @@ function createTodoItem(todo,todoIndex){
     const checkbox=todoLI.querySelector('input');
     checkbox.addEventListener("change",()=>{
         allTodos[todoIndex].completed=checkbox.checked;
-        checkSound.play();
+        if (checkbox.checked && checkSound.paused) { // Use checkbox.checked directly
+            checkSound.play();
+        }
         saveTodos();
     })
     checkbox.checked = todo.completed;
