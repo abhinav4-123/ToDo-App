@@ -1,32 +1,31 @@
-# ToDo App
+# Todo App
 
-This is a simple **ToDo App** built using **HTML**, **CSS**, and **JavaScript**. The app allows you to manage tasks by adding, deleting, and marking them as completed. The tasks are stored locally in the browser using `localStorage`, so they persist even when you refresh the page.
+A simple and intuitive Todo App that allows users to add, check, and delete tasks. This app stores the tasks locally in the browser using `localStorage`, so the data persists even when the page is reloaded. It also plays a sound when a task is marked as completed.
 
 ## Features
+- Add a new todo task
+- Mark tasks as completed
+- Delete tasks
+- Local storage support to retain tasks even after refreshing the page
+- Sound effect when a task is checked
 
-- Add tasks with a text input field.
-- Mark tasks as completed using checkboxes.
-- Delete tasks as needed.
-- The tasks are saved locally in the browser, ensuring persistence across sessions.
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
 
-## How to Use
+## Installation
 
-1. Clone the repository:
-git clone https://github.com/abhinav4-123/ToDo-App.git
+Clone the repository to your local machine: git clone https://github.com/abhinav4-123/ToDo-App.git
 
-2. Open the `index.html` file in your browser.
+Navigate to the project folder: cd ToDo-App
 
-3. Add, check off, or delete tasks as you go. Your tasks will be saved locally in your browser.
 
-## Technologies Used
+Open `index.html` in your browser to run the app.
 
-- **HTML**: Structure of the app.
-- **CSS**: Basic styling for the app.
-- **JavaScript**: Functionality for adding, deleting, and marking tasks as completed.
-- **localStorage**: To persist data across sessions.
+## How It Works
+1. **Add Task**: You can add a task by typing in the input box and pressing "Add". The task will appear in the list below.
+2. **Mark Task as Completed**: Click on the checkbox next to a task. A sound will play, and the task will be marked as completed.
+3. **Delete Task**: Click on the delete icon next to any task to remove it from the list.
 
-## Future Enhancements
-
-- Implement a better UI/UX.
-- Allow users to categorize tasks.
-- Add an option for syncing tasks across devices using an external storage service (e.g., Firebase).
+The tasks are stored in the browser's `localStorage`, meaning they will persist even if you refresh the page.
