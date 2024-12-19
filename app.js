@@ -2,7 +2,7 @@
 const todoForm=document.querySelector('form');
 const todoInput=document.getElementById("todo-input");
 const todoListUL=document.getElementById("todo-list");
-const checkSound = new Audio('sounds/complete.mp3');
+const checkSound = new Audio('sound2.wav');
 
 let allTodos=getTodos();
 updateTodoList();
