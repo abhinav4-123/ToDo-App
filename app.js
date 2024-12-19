@@ -2,6 +2,7 @@
 const todoForm=document.querySelector('form');
 const todoInput=document.getElementById("todo-input");
 const todoListUL=document.getElementById("todo-list");
+const checkSound = new Audio('sounds/complete.mp3');
 
 let allTodos=getTodos();
 updateTodoList();
@@ -63,6 +64,7 @@ function createTodoItem(todo,todoIndex){
     const checkbox=todoLI.querySelector('input');
     checkbox.addEventListener("change",()=>{
         allTodos[todoIndex].completed=checkbox.checked;
+        checkSound.play();
         saveTodos();
     })
     checkbox.checked = todo.completed;
